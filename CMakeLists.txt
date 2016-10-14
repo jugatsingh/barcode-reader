@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( imagebar )
+find_package( OpenCV )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( imagebar imagebar.cpp )
+target_link_libraries( imagebar ${OpenCV_LIBS} )
